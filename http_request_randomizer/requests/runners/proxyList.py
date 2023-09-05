@@ -9,7 +9,7 @@ from http_request_randomizer.requests.parsers.ProxyForEuParser import ProxyForEu
 from http_request_randomizer.requests.parsers.RebroWeeblyParser import RebroWeeblyParser
 from http_request_randomizer.requests.parsers.PremProxyParser import PremProxyParser
 
-__author__ = 'pgaref'
+__author__ = 'kimjang'
 
 handler = logging.StreamHandler()
 formatter = logging.Formatter('%(levelname)-8s %(name)-6s %(message)s')

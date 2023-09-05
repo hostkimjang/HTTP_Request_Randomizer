@@ -6,13 +6,13 @@ import sys
 import os
 import re
 
-NAME = 'http_request_randomizer'
+NAME = 'http_request_randomizer_fix'
 HERE = os.path.abspath(os.path.dirname(__file__))
 
 PROJECT_URLS = {
     'Blog': 'http://pgaref.com/blog/python-proxy',
     'Documentation': 'https://pythonhosted.org/http-request-randomizer',
-    'Source Code': 'https://github.com/pgaref/http_request_randomizer',
+    'Source Code': 'https://github.com/hostkimjang/HTTP_Request_Randomizer',
 }
 
 def read(*parts):
@@ -96,7 +96,7 @@ setup(
                       'pyOpenSSL >= 19.1.0',
                       'fake-useragent >= 0.1.11'
                       ],
-    use_scm_version=True,
+    use_scm_version=False,
     setup_requires=['setuptools-scm', 'pytest-runner'],
     zip_safe=False,
     # include_package_data=True,
@@ -125,6 +125,7 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
 )

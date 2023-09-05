@@ -2,7 +2,7 @@ import re
 
 from http_request_randomizer.requests.errors.ParserExceptions import ParserException
 
-__author__ = 'pgaref'
+__author__ = 'kimjang'
 
 
 class UrlParser(object):

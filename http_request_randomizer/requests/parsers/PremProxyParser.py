@@ -8,7 +8,7 @@ from http_request_randomizer.requests.parsers.UrlParser import UrlParser
 from http_request_randomizer.requests.proxy.ProxyObject import ProxyObject, AnonymityLevel, Protocol
 
 logger = logging.getLogger(__name__)
-__author__ = 'pgaref'
+__author__ = 'kimjang'
 
 
 # Samair Proxy now renamed to: premproxy.com
