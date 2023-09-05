@@ -44,7 +44,7 @@ class RequestProxy:
         parsers.append(FreeProxyParser('FreeProxy', 'http://free-proxy-list.net', timeout=timeout))
         #parsers.append(ProxyForEuParser('ProxyForEU', 'http://proxyfor.eu/geo.php', 1.0, timeout=timeout)) <--doesn't work anymore
         #parsers.append(RebroWeeblyParser('ReBro', 'http://rebro.weebly.com', timeout=timeout)) <--doesn't work anymore
-        parsers.append(PremProxyParser('PremProxy', 'https://premproxy.com', timeout=timeout))
+        #parsers.append(PremProxyParser('PremProxy', 'https://premproxy.com', timeout=timeout)) <--doesn't work anymore
         parsers.append(SslProxyParser('SslProxy', 'https://www.sslproxies.org', timeout=timeout))
 
         self.logger.debug("=== Initialized Proxy Parsers ===")
