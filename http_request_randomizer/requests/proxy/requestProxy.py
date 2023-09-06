@@ -17,6 +17,7 @@ from http_request_randomizer.requests.parsers.ProxyForEuParser import ProxyForEu
 from http_request_randomizer.requests.parsers.RebroWeeblyParser import RebroWeeblyParser
 from http_request_randomizer.requests.parsers.PremProxyParser import PremProxyParser
 from http_request_randomizer.requests.parsers.SslProxyParser import SslProxyParser
+from http_request_randomizer.requests.parsers.SpysParser import SpysProxyParser
 from http_request_randomizer.requests.useragent.userAgent import UserAgentManager
 
 __author__ = 'pgaref'
@@ -41,11 +42,12 @@ class RequestProxy:
         # Each of the classes below implements a specific URL Parser
         #####
         parsers = list([])
-        parsers.append(FreeProxyParser('FreeProxy', 'http://free-proxy-list.net', timeout=timeout))
+        #parsers.append(FreeProxyParser('FreeProxy', 'http://free-proxy-list.net', timeout=timeout))
         #parsers.append(ProxyForEuParser('ProxyForEU', 'http://proxyfor.eu/geo.php', 1.0, timeout=timeout)) <--doesn't work anymore
         #parsers.append(RebroWeeblyParser('ReBro', 'http://rebro.weebly.com', timeout=timeout)) <--doesn't work anymore
         #parsers.append(PremProxyParser('PremProxy', 'https://premproxy.com', timeout=timeout)) <--doesn't work anymore
         parsers.append(SslProxyParser('SslProxy', 'https://www.sslproxies.org', timeout=timeout))
+        #parsers.append(SpysProxyParser('SpyProxy', 'https://www.sslproxies.org', timeout=timeout))
 
         self.logger.debug("=== Initialized Proxy Parsers ===")
         for i in range(len(parsers)):
